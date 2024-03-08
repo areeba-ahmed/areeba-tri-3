@@ -1,9 +1,9 @@
-title: Teacher 2.0
-description: "August 2023 to June 2024"
-owner_name: John Mortensen
-github_username: nighthawkcoders
-github_repo: "teacher_portfolio"
-baseurl: "/teacher_portfolio"
+title: Areeba's Blog
+description: CSSE Tri 3
+owner_name: Areeba Ahmed
+github_username: areeba-ahmed
+github_repo: "areeba-tri-3"
+baseurl: "/areeba-tri-3"
 future: true
 remote_theme: jekyll/minima
 minima:
