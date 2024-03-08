@@ -101,6 +101,16 @@ hide: true
       this.animate(this.obj["Run1"], 6);
     }
 
+    startWalkingLeft() {
+      this.stopAnimate();
+      this.animate(this.obj["WalkL"], -3);
+    }
+
+    startRunningLeft() {
+      this.stopAnimate();
+      this.animate(this.obj["Run1L"], -6);
+    }
+
     startPuffing() {
       this.stopAnimate();
       this.animate(this.obj["Puff"], 0);
@@ -121,12 +131,6 @@ hide: true
       this.animate(this.obj["Rest"], 0);
     }
 
-    startMovingLeft() {  // New method for moving left animation
-      this.stopAnimate();
-      this.animate(this.obj["MoveLeft"], -3); // Assuming you have an animation called "MoveLeft"
-    }
-
-
     stopAnimate() {
       clearInterval(this.tID);
     }
@@ -142,7 +146,7 @@ hide: true
       if (event.repeat) {
         mario.startCheering();
       } else {
-        if (mario.currentSpeed === 0) {
+        if (mario.currentSpeed === 0 || mario.currentSpeed === -3 || mario.currentSpeed === -6) {
           mario.startWalking();
         } else if (mario.currentSpeed === 3) {
           mario.startRunning();
@@ -151,12 +155,28 @@ hide: true
     } else if (event.key === "ArrowLeft") {
       event.preventDefault();
       if (event.repeat) {
-        mario.stopAnimate();
+        mario.startPuffing();
       } else {
-        mario.startMovingLeft();
+        if (mario.currentSpeed === 0) {
+        mario.startWalkingLeft();
+      } else if (mario.currentSpeed === -3) {
+        mario.startRunningLeft();
       }
     }
-  });
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    if (event.repeat) {
+      mario.startPuffing();
+    } else {
+      if (mario.currentSpeed === 0) {
+      mario.startWalking();
+    } else if (mario.currentSpeed === 3) {
+      mario.startRunning();
+    }
+  }
+  }
+});
+
 
   //touch events that enable animations
   window.addEventListener("touchstart", (event) => {
