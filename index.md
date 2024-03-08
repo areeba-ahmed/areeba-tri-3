@@ -121,6 +121,11 @@ hide: true
       this.animate(this.obj["Rest"], 0);
     }
 
+    startJumping() {  // New method for jumping animation
+      this.stopAnimate();
+      this.animate(this.obj["Jump"], 0);
+    }
+
     stopAnimate() {
       clearInterval(this.tID);
     }
@@ -149,6 +154,9 @@ hide: true
       } else {
         mario.startPuffing();
       }
+    } else if (event.key === " ") { // Spacebar key for jumping
+      event.preventDefault();
+      mario.startJumping();
     }
   });
 
