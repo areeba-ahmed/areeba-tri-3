@@ -121,6 +121,12 @@ hide: true
       this.animate(this.obj["Rest"], 0);
     }
 
+    startMovingLeft() {  // New method for moving left animation
+      this.stopAnimate();
+      this.animate(this.obj["MoveLeft"], -3); // Assuming you have an animation called "MoveLeft"
+    }
+
+
     stopAnimate() {
       clearInterval(this.tID);
     }
@@ -147,7 +153,7 @@ hide: true
       if (event.repeat) {
         mario.stopAnimate();
       } else {
-        mario.startPuffing();
+        mario.startMovingLeft();
       }
     }
   });
