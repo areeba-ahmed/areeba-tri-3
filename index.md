@@ -190,7 +190,13 @@ hide: true
       }
     } else {
       // move left
-      mario.startPuffing();
+      if (mario.currentSpeed === 0) {
+        mario.startWalkingLeft();
+      } else if (mario.currentSpeed === 3) {
+        mario.startRunningLeft();
+      } else {
+        mario.startPuffing();
+      }
     }
   });
 
