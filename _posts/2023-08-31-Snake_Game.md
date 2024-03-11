@@ -1,11 +1,12 @@
 ---
-toc: true
-comments: false
+toc: True
+title: Tri 1 Snake Game
+comments: True
 layout: post
-title: Snake Game
-description: this is the snake game
-type: hacks
-courses: { csse: {week: 3} }
+description: Tri 1 Snake game 
+author: Areeba Ahmed
+type: ccc
+courses: {'csse': {'week': 24}}
 ---
 
 <style>

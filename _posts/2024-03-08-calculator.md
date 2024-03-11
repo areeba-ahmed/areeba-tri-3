@@ -5,7 +5,7 @@ layout: post
 description: Calculator 
 author: Areeba Ahmed
 type: ccc
-courses: {'csa': {'week': 24}}
+courses: {'csse': {'week': 2}}
 ---
 
 <style>
