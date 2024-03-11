@@ -1,11 +1,12 @@
 ---
-title: Calculator
+toc: True
+title: Tri 1 Calculator
 comments: True
 layout: post
-description: Calculator 
+description: Tri 1 Calculator
 author: Areeba Ahmed
 type: ccc
-courses: {'csse': {'week': 2}}
+courses: {'csse': {'week': 24}}
 ---
 
 <style>
