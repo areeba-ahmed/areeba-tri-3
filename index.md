@@ -157,8 +157,8 @@ hide: true
       if (event.repeat) {
         mario.startPuffing();
       } else {
-        if (mario.currentSpeed === 0) {
-        mario.startWalkingLeft();
+        if (mario.currentSpeed === 0 || mario.currentSpeed === 3 || mario.currentSpeed === 6) {
+          mario.startWalkingLeft();
       } else if (mario.currentSpeed === -3) {
         mario.startRunningLeft();
       }
