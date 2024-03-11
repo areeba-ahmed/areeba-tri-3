@@ -220,12 +220,11 @@ hide: true
   });
 
 </script>
-Investing in Your Technical Future
+# Background
+Hi my name is Areeba and I'm a freshman at Del Norte. I'm 15 years old and I've lived in California for 11 years and was born in Austin, Texas. 
 
-Explore the Computer Science Pathway at Del Norte High School. All Del Norte CompSci classes are designed to provide a real-world development experience. Grading is focused on time invested, analytics, participation with peers, and engagement in learning.
+# Hobbies
+My hobbies are snowboarding, painting, listening to music and watching movies. 
 
-- Project-based learning with teacher support
-- Tech Talks by teacher complimented with Student Teaching
-- Course learning includes Coding Languages, DevOps, GitHub, Research and Creativity
-- Student teams practice Agile Development Methodologies: planning, communication, collaboration
-- Class lab time provided and approximately 2-3 hours of homework per week
+# Goals
+I hope to learn more about computer science and coding, improve throughout the trimester.
