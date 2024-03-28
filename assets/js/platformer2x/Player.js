@@ -284,6 +284,10 @@ export class Player extends Character {
             this.movement.right = true;
         }
 
+        //this.anything = false; " This specefic file"
+        
+        //GameEnv.aything = true; " can travel between files"
+
         // Goomba collision check
         // Checks if collision touchpoint id is either "goomba" or "flyingGoomba"
         if (this.collisionData.touchPoints.other.id === "goomba" || this.collisionData.touchPoints.other.id === "flyingGoomba") {
